@@ -3,7 +3,8 @@ package string;
 public class LongestPalindrome {
     public static void main(String[] args) {
         String s = "abacdfgdcaba";
-
+        String sub = longestPalindrome(s);
+        System.out.println(sub);
 
     }
     static String longestPalindrome(String s){
@@ -23,13 +24,26 @@ public class LongestPalindrome {
                     }
                 }
                 if(dp[i][j] >max){
-                    max = dp[i][j];
-                    prei = i;
+                    if(isPalin(s,i-dp[i][j]+1,i)){
+                        max = dp[i][j];
+                        prei = i;
+                    }
+
                 }
             }
         }
 
-        String sub;
+        String sub = s.substring(prei-max+1,prei+1);
         return sub;
+    }
+    static public boolean isPalin(String s ,int start,int end){
+        while (start<end){
+            if(s.charAt(start) == s.charAt(end)){
+                start++;
+                end--;
+            }else
+                return false;
+        }
+        return true;
     }
 }
