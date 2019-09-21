@@ -3,8 +3,8 @@ package Structures.arrays;
 import java.util.Arrays;
 
 /**
-Ò»¸ö×Ö·ûÊý×é£¬ÆäÖÐ´æ´¢ÓÐR¡¢G¡¢B×Ö·û£¬ÒªÇó½«ËùÓÐµÄ×Ö·û°´ÕÕ RGB µÄË³Ðò½øÐÐÅÅÐò¡£
-±ÈÈç¸ø¶¨Ò»¸öÊý×éÎª char s[] = "RGBBRGGBGB"£¬ÔòÅÅÐòºóÓ¦¸ÃÎª RRGGGGBBBB
+ä¸€ä¸ªå­—ç¬¦æ•°ç»„ï¼Œå…¶ä¸­å­˜å‚¨æœ‰Rã€Gã€Bå­—ç¬¦ï¼Œè¦æ±‚å°†æ‰€æœ‰çš„å­—ç¬¦æŒ‰ç…§ RGB çš„é¡ºåºè¿›è¡ŒæŽ’åºã€‚
+æ¯”å¦‚ç»™å®šä¸€ä¸ªæ•°ç»„ä¸º char s[] = "RGBBRGGBGB"ï¼Œåˆ™æŽ’åºåŽåº”è¯¥ä¸º RRGGGGBBBB
  */
 public class RGBsort {
     public static void main(String[] args) {
